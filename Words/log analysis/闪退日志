@@ -1,0 +1,76 @@
+JNI DETECTED ERROR IN APPLICATION: field operation on NULL object: 0x0
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]     in call to GetLongField
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]     from int com.danale.video.jni.Decoder.nativeGetSourceData(java.nio.ByteBuffer)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410] "main" prio=5 tid=1 Runnable
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   | group="main" sCount=0 dsCount=0 obj=0x75fe7710 self=0x7f8ff3ba00
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   | sysTid=501 nice=0 cgrp=default sched=0/0 handle=0x7f93562fc8
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   | state=R schedstat=( 2908418432 705429447 4921 ) utm=177 stm=113 core=2 HZ=100
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   | stack=0x7fdcd4a000-0x7fdcd4c000 stackSize=8MB
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   | held mutexes= "mutator lock"(shared held)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #00 pc 000000000048da48  /system/lib64/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+200)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #01 pc 000000000045c8e4  /system/lib64/libart.so (_ZNK3art6Thread4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEP12BacktraceMap+224)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #02 pc 00000000003108b4  /system/lib64/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+1004)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #03 pc 000000000031116c  /system/lib64/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+116)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #04 pc 000000000014409c  /system/lib64/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+144)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #05 pc 0000000000163d04  /system/lib64/libart.so (_ZN3art11ScopedCheck16CheckFieldAccessERNS_18ScopedObjectAccessEP8_jobjectP9_jfieldIDbNS_9Primitive4TypeE+2992)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #06 pc 00000000001653dc  /system/lib64/libart.so (_ZN3art8CheckJNI8GetFieldEPKcP7_JNIEnvP8_jobjectP9_jfieldIDbNS_9Primitive4TypeE+656)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #07 pc 0000000000165ab4  /system/lib64/libart.so (_ZN3art8CheckJNI12GetLongFieldEP7_JNIEnvP8_jobjectP9_jfieldID+44)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #08 pc 000000000032f5e8  /system/lib64/libart.so (_ZN3art3JNI22GetDirectBufferAddressEP7_JNIEnvP8_jobject+28)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #09 pc 000000000015be68  /system/lib64/libart.so (_ZN3art8CheckJNI22GetDirectBufferAddressEP7_JNIEnvP8_jobject+496)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #10 pc 000000000012dc08  /data/app/com.danale.video-1/lib/arm64/libdecoder.so (Java_com_danale_video_jni_Decoder_nativeGetSourceData+140)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #11 pc 000000000277f5c8  /data/app/com.danale.video-1/oat/arm64/base.odex (int com.danale.video.jni.Decoder.nativeGetSourceData(java.nio.ByteBuffer)+156)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #12 pc 0000000002789298  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.decode.DecoderHelper.onStartRecord(java.lang.String, int, com.danale.video.callback.OnRecordInitResultCallback)+1900)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #13 pc 00000000027867c8  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.controller.RawDataProcessor.startRecord(java.lang.String, com.danale.video.callback.OnRecordInitResultCallback)+460)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #14 pc 0000000002771580  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.controller.DevicePlayHelper.startRecord(java.lang.String, java.lang.String, com.danale.video.callback.OnRecordInitResultCallback)+548)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #15 pc 0000000002a75fac  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.player.content.VideoController.startRecord(com.danale.player.content.UniqueId, java.lang.String, com.danale.video.sdk.player.DanalePlayer)+336)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #16 pc 0000000002a6e54c  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.player.content.ContentController.videoRecord(com.danale.player.content.UniqueId, java.lang.String, com.danale.video.sdk.player.DanalePlayer)+96)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #17 pc 0000000002a64564  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.player.SPlayer.videoRecord(com.danale.player.content.UniqueId, java.lang.String)+136)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #18 pc 00000000003d0150  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.player.model.impl.VideoControlManager.startRecord()+2884)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #19 pc 00000000003d19f0  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.player.model.impl.VideoControlManager.clickRecord()+564)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #20 pc 00000000004d5a54  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.player.presenter.impl.VideoPresenter.clickRecord()+72)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #21 pc 00000000005b6ab4  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.player.category.ipc.VideoFragment.onClick(android.view.View)+3048)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #22 pc 00000000001d5c7c  /data/app/com.danale.video-1/oat/arm64/base.odex (void com.danale.video.player.category.ipc.VideoFragment_ViewBinding$7.doClick(android.view.View)+80)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #23 pc 00000000008f8b14  /data/app/com.danale.video-1/oat/arm64/base.odex (void butterknife.internal.DebouncingOnClickListener.onClick(android.view.View)+184)
+08-08 20:24:57.315 501-501/com.danale.video A/art: art/runtime/java_vm_ext.cc:410]   native: #24 pc 000000000172105c  /system/framework/arm64/
+已解决
+
+
+
+
+
+
+
+
+08-09 21:06:03.710 6628-7099/com.danale.video A/libc: Fatal signal 11 (SIGSEGV), code 0, fault addr 0x285b000019e4 in tid 7099 (Thread-7696)
+08-09 21:06:03.813 478-478/? A/DEBUG: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+08-09 21:06:03.814 478-478/? A/DEBUG: Build fingerprint: 'nubia/NX569J/NX569J:6.0.1/MMB29M/eng.nubia.20170926.235033:user/release-keys'
+08-09 21:06:03.814 478-478/? A/DEBUG: Revision: '0'
+08-09 21:06:03.814 478-478/? A/DEBUG: ABI: 'arm64'
+08-09 21:06:03.814 478-478/? A/DEBUG: pid: 6628, tid: 7099, name: Thread-7696  >>> com.danale.video <<<
+08-09 21:06:03.814 478-478/? A/DEBUG: signal 11 (SIGSEGV), code 0 (SI_USER), fault addr 0x8c
+08-09 21:06:03.855 478-478/? A/DEBUG:     x0   0000000000000000  x1   0000000000000000  x2   0000000000000000  x3   0000000000000000
+08-09 21:06:03.856 478-478/? A/DEBUG:     x4   0000000000000000  x5   0000000000000000  x6   0000000000000000  x7   0000000000000000
+08-09 21:06:03.856 478-478/? A/DEBUG:     x8   0000000000000001  x9   0000007f6cfa2570  x10  00000000000000b6  x11  00000000000000b7
+08-09 21:06:03.856 478-478/? A/DEBUG:     x12  0000000000000000  x13  0000000000000001  x14  0000007f5f97fb08  x15  0000000000000000
+08-09 21:06:03.856 478-478/? A/DEBUG:     x16  0000007f6c8045e0  x17  0000007f930d9db8  x18  0000007f8ffa9000  x19  0000007f64ca1444
+08-09 21:06:03.856 478-478/? A/DEBUG:     x20  0000007f64ca1494  x21  0000007f64c5e000  x22  0000007f5f68c410  x23  0000007f5f9804f0
+08-09 21:06:03.856 478-478/? A/DEBUG:     x24  0000000000000000  x25  0000007f5f9802c8  x26  000000007207e7ad  x27  0000000071c28610
+08-09 21:06:03.856 478-478/? A/DEBUG:     x28  0000007f5f829f80  x29  0000007f5f97ffe0  x30  0000007f6bf53384
+08-09 21:06:03.856 478-478/? A/DEBUG:     sp   0000007f5f97ff50  pc   0000007f6bf53384  pstate 0000000060000000
+08-09 21:06:03.866 478-478/? A/DEBUG: backtrace:
+08-09 21:06:03.866 478-478/? A/DEBUG:     #00 pc 0000000000133384  /data/app/com.danale.video-1/lib/arm64/libdecoder.so (write_video_frame_h264+168)
+08-09 21:06:03.866 478-478/? A/DEBUG:     #01 pc 000000000446081c  /data/app/com.danale.video-1/oat/arm64/base.odex (offset 0x19eb000) (void com.danale.video.jni.Decoder.WriteH264Date()+128)
+08-09 21:06:03.867 478-478/? A/DEBUG:     #02 pc 000000000445fb00  /data/app/com.danale.video-1/oat/arm64/base.odex (offset 0x19eb000) (void com.danale.video.decode.DecoderHelper$3.run()+228)
+08-09 21:06:03.867 478-478/? A/DEBUG:     #03 pc 0000000002081634  /system/framework/arm64/boot.oat (offset 0x2057000)
+08-09 21:06:04.960 478-478/? A/DEBUG: Tombstone written to: /data/tombstones/tombstone_01
+
+
+
+
+
+
+
+
+
+
+boot.oat (???)
