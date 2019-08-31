@@ -1,0 +1,15 @@
+libfaac_la-huffdata.lo: huffdata.c huffdata.h \
+ /home/danale/Android/android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/include/stdint.h \
+ /home/danale/Android/android-ndk-r15c/platforms/android-21/arch-arm64/usr/include/stdint.h \
+ /home/danale/Android/android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/include/stddef.h \
+ /home/danale/Android/android-ndk-r15c/platforms/android-21/arch-arm64/usr/include/machine/wchar_limits.h
+
+huffdata.h:
+
+/home/danale/Android/android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/include/stdint.h:
+
+/home/danale/Android/android-ndk-r15c/platforms/android-21/arch-arm64/usr/include/stdint.h:
+
+/home/danale/Android/android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/include/stddef.h:
+
+/home/danale/Android/android-ndk-r15c/platforms/android-21/arch-arm64/usr/include/machine/wchar_limits.h:

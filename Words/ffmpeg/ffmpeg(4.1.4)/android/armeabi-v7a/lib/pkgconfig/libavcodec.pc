@@ -1,0 +1,14 @@
+prefix=/home/danale/Desktop/ffmpeg-4.1.4/android/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/danale/Desktop/ffmpeg-4.1.4/android/armeabi-v7a/lib
+includedir=/home/danale/Desktop/ffmpeg-4.1.4/android/armeabi-v7a/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.35.100
+Requires: 
+Requires.private: libswresample >= 3.3.100, libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -pthread -lm -lz
+Cflags: -I${includedir}
