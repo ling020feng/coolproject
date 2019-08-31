@@ -2,5 +2,5 @@
 
 本页中Makefile.config文件在安装过程中要被使用
 
-相关图片在[picture](./picture)中
+
 
